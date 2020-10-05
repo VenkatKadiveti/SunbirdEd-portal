@@ -194,7 +194,7 @@
     </div>
   </div>
 
-  <sui-tabset class="batch-report-tabs" *ngIf="currentBatch">
+  <!-- <sui-tabset class="batch-report-tabs" *ngIf="currentBatch">
     <div class="ui pointing secondary menu">
       <a class="item" (click)="summaryReport(1)" suiTabHeader="1">{{resourceService?.frmelmnts?.lbl?.stateWiseReport}}</a>
       <a class="item" (click)="loadOndemandReports(2)" suiTabHeader="2">{{resourceService?.frmelmnts?.lbl?.detailedWiseReport}}</a>
@@ -208,5 +208,5 @@
     <div class="ui segment detailed-report" suiTabContent="2">
       <app-on-demand-reports [reportTypes]="reportTypes" [userId]="userId" [batch]="currentBatch" [tag]="courseId + '_'+batchId"></app-on-demand-reports>
     </div>
-  </sui-tabset>
+  </sui-tabset> -->
 </div>
