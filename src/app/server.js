@@ -174,6 +174,8 @@ require('./routes/refreshTokenRoutes.js')(app, keycloak) // refresh token routes
 
 require('./routes/accountMergeRoute.js')(app, keycloak) // refresh token routes
 
+require('./routes/discussionForum.js')(app) // discussionForum api routes
+
 require('./routes/clientRoutes.js')(app, keycloak) // client app routes
 
 require('./routes/reportRoutes.js')(app, keycloak) // report routes
