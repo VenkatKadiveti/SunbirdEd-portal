@@ -12,6 +12,10 @@ const isAPIWhitelisted  = require('../helpers/apiWhiteList');
 
 module.exports = function (app) {
 
+    // dummy api forload testing
+    app.get(`${BASE_REPORT_URL}/dummy/withoutLogic`, proxy(`${discussions_middleware}/dummy/withoutLogic`));
+    app.get(`${BASE_REPORT_URL}/dummy/category/:cid`, proxy(`${discussions_middleware}/dummy/category/2`));
+    
     app.post(`${BASE_REPORT_URL}/forum/v2/read`, proxyUtils.verifyToken(), proxyObject());
     app.post(`${BASE_REPORT_URL}/forum/tags`, proxyUtils.verifyToken(), proxyObject());
     app.post(`${BASE_REPORT_URL}/forum/v2/create`, proxyUtils.verifyToken(), proxyObject());

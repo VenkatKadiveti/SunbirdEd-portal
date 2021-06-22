@@ -1268,6 +1268,14 @@ const API_LIST = {
       checksNeeded: []
     },
     // discussion forum apis
+    '/discussion/dummy/withoutLogic': {
+      checksNeeded: [],
+      ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
+    },
+    '/discussion/dummy/category/:cid': {
+      checksNeeded: [],
+      ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
+    },
     '/discussion/user/v1/create': {
       checksNeeded: [],
       ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
