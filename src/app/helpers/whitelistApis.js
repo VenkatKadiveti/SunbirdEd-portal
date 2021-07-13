@@ -1333,6 +1333,10 @@ const API_LIST = {
       checksNeeded: [],
       ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
     },
+    '/discussion/user/:userslug/posts': {
+      checksNeeded: [],
+      ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
+    },
     '/discussion/unread': {
       checksNeeded: [],
       ROLE_CHECK: [ROLE.ALL, ROLE.PUBLIC]
